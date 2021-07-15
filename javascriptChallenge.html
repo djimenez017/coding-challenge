@@ -1,0 +1,26 @@
+<html>
+  <title>The Javascript Challenge</title>
+  <body>
+    <h1>Javascript Challenge</h1>
+  </body>
+  <script>
+    for (let i = 1; i < 100; i++) {
+      i % 5 === 0 && i % 3 === 0
+        ? console.log("Fizzbuzz")
+        : i % 3 === 0
+        ? console.log("Fizz")
+        : i % 5 === 0
+        ? console.log("Buzz")
+        : console.log(i);
+    }
+
+    function getHeaderElement() {
+      if (":header" === null && TypeOf(":header") === undefined) {
+        console.log(`header element does not exist!`);
+      } else {
+        console.log(`header element exists!`);
+      }
+      return header;
+    }
+  </script>
+</html>

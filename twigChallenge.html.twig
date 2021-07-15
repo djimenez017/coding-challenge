@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twig Template form</title>
+  </head>
+  <body>
+    {% if isAdminLogin == true %}
+    {% set loginHeaderText = "ADMIN Log In"%} 
+    {% endif %}
+
+    <h1>{{loginHeaderText}}</h1>
+    <form>
+      <label for="input">
+        Username
+        <input type="text" />
+      </label>
+      <label for="input"
+        >Password
+        <input type="password" />
+      </label>
+      {{submitButtonHTML|raw}}
+    </form>
+    <p>{{TotalSiteLogin|number_format(0)}}</p>
+  </body>
+</html>
