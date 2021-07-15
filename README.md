@@ -24,20 +24,20 @@ In the example below, as long as the width is less than 300px then the flex-dire
 
 3.  Is there a way to manage CSS with variables and functions?
 
-Yes there is.
-I use css variable to deal with styling, rather than remembering a hex color code, you can do something like this:
+        Yes there is.
+        I use css variable to deal with styling, rather than remembering a hex color code, you can do something like this:
 
-    html {
-        --backgroundColor: white;
-        --textColor: red;
-    }
+        html {
+            --backgroundColor: white;
+            --textColor: red;
+        }
 
-Then i can apply the variables using the var() function
+        Then i can apply the variables using the var() function
 
-    body{
-        background: var(--backgroundColor);
-        color: var(--textColor);
-    }
+        body{
+            background: var(--backgroundColor);
+            color: var(--textColor);
+        }
 
 4.  Review and update the following erroneous CSS:
 
@@ -83,11 +83,11 @@ JAVASCRIPT
 
 3.  Describe how event bubbling works in the context of clicking on the “Hello World” text:
 
-    <body>
-        <div id=”container”>
-            <span id=”textContainer”>Hello World</span>
-        </div>
-    </body>
+    "<body>
+    <div id=”container”>
+    <span id=”textContainer”>Hello World</span>
+    </div>
+    </body>"
 
         If we click on the span that contains the word "Hello World" it would create a click event on the span that would rise to the parent div, then the grandparent body, and then to the HTML node, then the Document and ultimately the Window.
 
@@ -97,8 +97,8 @@ JAVASCRIPT
 
 5.  Please fix the following erroneous JavaScript code.
 
-        Returns the header element.
-        @return {(object|null)} The JQuery header element or null if the element does not exist
+Returns the header element.
+@return {(object|null)} The JQuery header element or null if the element does not exist
 
 function getHeaderElement() {
 
@@ -117,12 +117,13 @@ return header
 
 Changes:
 
-- change header to (":header") to get the header elements.
-- Switch the order of the console.logs
-- include an else inbetween the 2 console.log
-- Make the quotations in the console.log match
-- Fix multiple closing parenthesis.
+    - change header to (":header") to get the header elements.
+    - Switch the order of the console.logs
+    - include an else inbetween the 2 console.log
+    - Make the quotations in the console.log match
+    - Fix multiple closing parenthesis.
 
-See Javascript challenge for changes
+    See Javascript challenge for changes
 
 TWIG CHALLENGE
+**See twigChallenge.html.twig && first.php**
